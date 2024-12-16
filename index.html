@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanyawee</title>
+    <title>เครื่องคิดเลข</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
-   <h2>test java  script</script></h2>
+    <div class="calculator">
+        <!-- Display Screen -->
+        <input type="text" id="display" disabled />
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+
+            <!-- Row 2 -->
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+
+            <!-- Row 3 -->
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+
+            <!-- Row 4 -->
+            <button class="btn" onclick="appendToDisplay('0')">0</button>
+            <button class="btn clear" onclick="clearDisplay()">ล้าง</button>
+            <button class="btn calculate" onclick="calculate()">คำนวณ</button>
+            <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
